@@ -102,7 +102,7 @@ function Nord:Notify(Title, Message, Type, Duration)
 	local Type2Color = {['error'] = Color3.fromRGB(255, 87, 87), ['warn'] = Color3.fromRGB(255, 255, 127), ['success'] = Color3.fromRGB(85, 255, 127), ['normal'] = Color3.fromRGB(255, 255, 255),['maxy'] = Color3.fromRGB(255, 1, 1)}
 	local Frame = New("Frame", {Name = "MainFrame", Parent = NotificationHolder, BackgroundColor3 = Color3.fromRGB(70, 70, 73),
 		Size = UDim2.new(0.9, 0, 0.097, 0), ZIndex = 2, BackgroundTransparency = 1
-	}); local DropShadow = New("ImageLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.512, 0), Size = UDim2.new(1.053, 0, 1.135, 0), Image = "rbxassetid://7912134082",
+	}); local DropShadow = New("ImageLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.512, 0), Size = UDim2.new(1.050, 5, 1.135, 5), Image = "rbxassetid://7912134082",
 		ImageColor3 = Type2Color[Type:lower()], ImageTransparency = 1, ScaleType = "Slice", SliceCenter = Rect.new(95, 95, 205, 205)
 	}); New("UICorner", {Parent = Frame, CornerRadius = UDim.new(0, 5)}); New("UICorner", {Parent = DropShadow, CornerRadius = UDim.new(0, 5)});
 	local Header = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.237, 0, 0.172, 0), Size = UDim2.new(0.4, 0, 0.358, 0), ZIndex = 2, Font = "GothamMedium",
@@ -149,5 +149,3 @@ end
 
 
 return Nord
-
-
